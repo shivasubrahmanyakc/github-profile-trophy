@@ -2,8 +2,6 @@ import { soxa } from "../../deps.ts";
 import {
   EServiceKindError,
   GithubError,
-  GithubErrorResponse,
-  GithubExceedError,
   QueryDefaultResponse,
   ServiceError,
 } from "../Types/index.ts";
@@ -35,7 +33,7 @@ function handleError(
     message?: string;
     documentation_url?: string;
   },
-): ServiceError {
+): never {
   let isRateLimitExceeded = false;
   const arrayErrors = responseData?.errors || [];
 

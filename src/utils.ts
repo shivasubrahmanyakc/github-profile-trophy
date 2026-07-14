@@ -51,7 +51,7 @@ export function abridgeScore(score: number): string {
 const HOUR_IN_MILLISECONDS = 60 * 60 * 1000;
 
 export const CONSTANTS = {
-  CACHE_MAX_AGE: 18800,
+  CACHE_MAX_AGE: 28800,
   CDN_CACHE_MAX_AGE: 28800, // 8 hours for CDN edge cache
   STALE_WHILE_REVALIDATE: 86400, // 24 hours - serve stale while revalidating
   DEFAULT_PANEL_SIZE: 110,
